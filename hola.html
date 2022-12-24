@@ -1,2 +1,84 @@
-<html>  <body>
- hola </body>
+<html>
+  <head>
+	<title>Registro de Estudiante</title>
+  </head>
+  <body>
+	<h1>Resgistro de Estudiante</h1>
+        <hr>
+        <form method="get" action="get15est.php"> 
+            <table border=1>
+              <tr>
+                  <td>Nombre: </td>
+                  <td><input type="text" name="nombre" value="María">
+                  </td>
+	      </tr>
+	      <tr>
+                  <td>Apellido: </td>
+                  <td><input type="text" name="apellido" value="">
+                  </td>
+	      </tr>
+	      <tr>
+                  <td>C&eacute;dula: </td>
+                  <td><input type="text" name="cedula" value="">
+                  </td>
+	      </tr>
+	      <tr>
+                  <td>G&eacute;nero </td>
+                  <td>
+                     <input type="radio" name="genero" value="Femenino" checked>F
+		     <input type="radio" name="genero" value="Masculino">M
+                  </td>
+	      </tr>
+	      <tr>
+                  <td>Secci&oacute;n: </td>
+                  <td><input type="text" name="seccion" value="">
+                  </td>
+	      </tr>
+	      <tr>
+                  <td>Deporte Favorito: </td>
+                  <td><input type="checkbox" name="natacion" value="natacion">Nataci&oacute;n</td>
+              </tr>
+	      <tr>
+                  <td></td>
+                  <td>
+		     <input type="checkbox" name="tenis"    value="tenis">Tenis<br>
+		     <input type="checkbox" name="skate"    value="skate">Skate (Patinetero)<br>
+		     <input type="checkbox" name="otro"     value="otro">Otro
+                  </td>
+	      </tr>
+
+	      <tr>
+                  <td>Direcci&oacute;n: </td>
+                  <td>
+                      <textarea name="direccion" rows="5" cols="30"> 
+		      </textarea> 
+                  </td>
+	      </tr>
+
+              <tr>
+                  <td>Pa&iacute;s de Nacimiento:</td>
+                  <td>
+                      <select name"pais">
+		     	<option value="seleccione">--Seleccione--
+		     	<option value="argentina">Argentina
+		     	<option value="colombia">Colombia
+		     	<option value="ecuador">Ecuador
+		     	<option value="espanaa">Espa&ntilde;a
+		     	<option value="venezuela">Venezuela
+	             </select>
+                  </td>
+	      </tr>
+	    </table>
+	    <hr>            
+            <table>
+	        <tr>
+                  <td>
+                   <INPUT type="submit" name="enviar" value="ENVIAR"> 
+                   <input type="reset"  name="btnlimpiar" value="Limpiar">
+                  </td>
+	       </tr>
+	    </table>
+        </form>
+  </body>
+</html>
+
